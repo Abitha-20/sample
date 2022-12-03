@@ -3,7 +3,7 @@
   vars: ### variable module 
     Variable: global_variable ### global variable and this is the name of the variable 
   vars_files: ###declaring file variable
-    file_var.yml ### file variable
+    - file_var.yml ### file variable
   tasks: 
     - name: display global variables
       debug:
@@ -11,7 +11,7 @@
 
     - name: display local variables
       vars:  ### scope of local variable is within the task outside the it won't work 
-       Variable: local_variable
+        Variable: local_variable
       debug:
         msg: this is the {{Variable}}
 
