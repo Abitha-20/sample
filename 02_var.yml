@@ -1,8 +1,15 @@
 - name: display variables
   hosts: all
   vars: ### variable module 
-    global: global_variable ### global variable and this is the name of the variable 
+    Global: global_variable ### global variable and this is the name of the variable 
   tasks: 
     - name: display global variables
       debug:
-        msg: this is the {{global}}
+        msg: this is the {{Global}}
+
+  tasks: 
+    - name: display local variables
+      vars:
+       Local: local_variable
+      debug:
+        msg: this is the {{Local}}
