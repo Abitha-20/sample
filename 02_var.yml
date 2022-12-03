@@ -9,7 +9,7 @@
     - file_var.yml ### file variable
 
   vars_prompt: ### prompt variable declaring
-    - name: THE Name ### optional 
+    - name: Name ### optional 
       prompt: "Enter the name"
       private: yes
 
