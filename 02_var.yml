@@ -6,14 +6,11 @@
     - name: display global variables
       debug:
         msg: this is the {{Variable}} 
-        
+
     - name: display local variables
       vars:  ### scope of local variable is within the task outside the it won't work 
        Variable: local_variable
       debug:
         msg: this is the {{Variable}}
 
-  tasks: 
-    - name: display global variables
-      debug:
-        msg: this is the {{Variable}}
+ 
