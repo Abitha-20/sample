@@ -4,8 +4,3 @@
    - name: display msg
      debug:
        msg: "this is my first yaml script"
-
-  tasks: 
-   - name: display msg2
-     debug: 
-     msg: "this is the second msg from play1"
