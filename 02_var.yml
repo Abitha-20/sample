@@ -3,7 +3,7 @@
   vars: ### variable module 
     Variable: global_variable ### global variable and this is the name of the variable 
   vars_files: ###declaring file variable
-    File_var ### file variable
+    file_var.yml ### file variable
   tasks: 
     - name: display global variables
       debug:
