@@ -1,7 +1,7 @@
 - name: Demo on using register 
   hosts: all
   tasks:
-    - name: Execute Shel Command 
+    - name: Execute Shel Command ### the name is must for every module 
       shell: uptime
       register: OUT ###the output of the shell command is register/stored in "Out" variable can have any variable name
     
