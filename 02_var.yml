@@ -4,8 +4,15 @@
   hosts: all
   vars: ### variable module 
     Variable: global_variable ### global variable and this is the name of the variable 
+
   vars_files: ###declaring file variable
     - file_var.yml ### file variable
+
+  vars_prompt: ### prompt variable declaring
+    - name: getting the name from user
+      prompt: "Enter the name"
+      private: yes
+
   tasks: 
     - name: display global variables
       debug:
@@ -24,3 +31,7 @@
     - name: display file variables  ### dispaly the file variable by passing the variable through file
       debug:
         msg: this is the {{File_var}}
+
+    - name: display the prompt variables  ### dispaly the file variable by passing the variable through file
+      debug:
+        msg: this is the prompt variable{{Name}}
