@@ -1,6 +1,6 @@
 - name: display variables
   hosts: all
-  var: ### variable module 
+  vars: ### variable module 
    global: global_variable ### global variable and this is the name of the variable 
   tasks: 
    - name: display global variables
