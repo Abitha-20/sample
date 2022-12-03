@@ -8,4 +8,7 @@
     - name: Printing uptime variable 
       debug:
         msg: "{{OUT.stdout}}"
-      
+      set_fact:
+       STATUS: "{{OUT.rc}}"
+      debug:
+       msg: "status of the uptime command {{STATUS}}"
