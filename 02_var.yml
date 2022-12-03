@@ -1,3 +1,5 @@
+### CLI variable > local variable > file variable > global variable
+
 - name: display variables
   hosts: all
   vars: ### variable module 
