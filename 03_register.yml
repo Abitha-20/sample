@@ -1,9 +1,11 @@
-- name: execute the shell command
+- name: Demo on using register 
   hosts: all
   tasks:
-   - name: COMMAND FOR uptime
-     shell: uptime
-     register: OUT ### the output of the shell command is register/stored in "Out" variable can have any variable name
-  - name: display THE UPTIME
-     debug: 
-      msg: "{{OUT.stdout}}"
+    - name: Execute Shel Command 
+      shell: uptime
+      register: OUT ###the output of the shell command is register/stored in "Out" variable can have any variable name
+    
+    - name: Printing uptime variable 
+       debug:
+         msg: "{{OUT.stdout}}"
+      
