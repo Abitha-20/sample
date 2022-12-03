@@ -1,8 +1,19 @@
-- name: play1
+- name: play1 ### name of the play 1
   hosts: all
   tasks:
-   - name: display msg
+   - name: display paly 1 task 1 ### name of the task 1
      debug:
-       msg: "this is my first yaml script"
+       msg: "this is my first paly task 1"
+    - name: display paly 1 task 2  ### name of the task 2
      debug:
-       msg: "this is my first yaml script"
+       msg: "this is my first paly task 2"
+       
+- name: play2 ### name of the play 2
+  hosts: all
+  tasks:
+   - name: display paly 2 task 1
+     debug:
+       msg: "this is my second paly task 1"
+    - name:  display paly 2 task 2
+     debug:
+       msg: "this is my second paly task 2"
