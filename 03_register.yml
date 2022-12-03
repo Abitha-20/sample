@@ -1,0 +1,8 @@
+- name: execute the shell command
+  hosts: all
+  tasks:
+   - name: display the uptime
+     shell: uptime
+     register: Out ### the output of the shell command is register/stored in "Out" variable can have any variable name
+     debug: 
+      msg: "{{Out.stdout}}"
