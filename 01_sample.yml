@@ -4,3 +4,6 @@
    - name: display msg
      debug:
        msg: "this is my first yaml script"
+   - name: display msg
+     debug:
+       msg: "this is my first yaml script"
