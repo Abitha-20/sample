@@ -13,4 +13,6 @@
       debug:
         msg: this is the {{Variable}}
 
- 
+   - name: display command line variables  ### dispaly the variable by passing through command (-e)
+      debug:
+        msg: this is the {{Command_Variable}}
