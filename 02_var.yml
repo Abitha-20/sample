@@ -9,7 +9,7 @@
     - file_var.yml ### file variable
 
   vars_prompt: ### prompt variable declaring
-    - name: getting the name from user
+    - name: Name
       prompt: "Enter the name"
       private: yes
 
@@ -34,4 +34,4 @@
 
     - name: display the prompt variables  ### dispaly the file variable by passing the variable through file
       debug:
-        msg: this is the prompt variable{{Name}}
+        msg: this is the prompt variable {{Name}}
