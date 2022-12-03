@@ -7,6 +7,5 @@
     
     - name: Printing uptime variable 
        debug:
-        msg: "{{OUT.stdout}}"
+         msg: "{{OUT.stdout}}"
       
-
