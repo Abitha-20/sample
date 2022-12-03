@@ -22,6 +22,6 @@
     - name: Print me only when action is true 
       debug:
         msg: Hey hi, I was defined with true on ACTION
-      when: true
+      when: false
    
 # true, false , defined, not defined are the ansible conditionsal keywords 
