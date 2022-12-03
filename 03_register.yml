@@ -4,5 +4,6 @@
    - name: display the uptime
      shell: uptime
      register: Out ### the output of the shell command is register/stored in "Out" variable can have any variable name
+  - name: display the uptime
      debug: 
       msg: "{{Out.stdout}}"
