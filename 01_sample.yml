@@ -1,6 +1,6 @@
 - name: play1
   hosts: all
-  task:
+  tasks:
    - name: display msg
      debug:
        msg: "this is my first yaml script"
