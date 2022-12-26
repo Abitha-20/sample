@@ -2,7 +2,7 @@
   hosts: all 
   vars:
     x: abc
-    ###action: false
+    action: false
   tasks:
     - name: Run this when OS is RedHat
       debug:
@@ -22,6 +22,6 @@
     - name: Print me only when action is true 
       debug:
         msg: Hey hi, I was defined with true on ACTION
-      when: false ### this can also be mentioned using a variable 
+      when: action 
    
-# true, false , is defined, is not defined is successed, is failed are the ansible conditionsal keywords 
+# true, false , defined, not defined are the ansible conditionsal keywords 

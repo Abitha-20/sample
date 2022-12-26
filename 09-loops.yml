@@ -5,8 +5,8 @@
       debug:
         msg:  "value = {{item}}"
       loop:
-        - dfd
+        - 10
         - 20
-        - 30dfa
+        - 30
         - 40
-        - abc
+        - 50
